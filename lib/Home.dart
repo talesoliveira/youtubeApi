@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:youtube/screens/Biblioteca.dart';
+import 'package:youtube/screens/EmAlta.dart';
+import 'package:youtube/screens/Inicio.dart';
+import 'package:youtube/screens/Inscricao.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -10,6 +14,14 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> telas = [
+     Inicio(),
+     EmAlta(),
+     Inscricao(),
+     Biblioteca()
+    ];
+
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(
@@ -45,7 +57,7 @@ class _HomeState extends State<Home> {
         ],
 
       ),
-      body: Container(),
+      body: telas [_indiceAtual],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _indiceAtual,
         onTap:(indice){
