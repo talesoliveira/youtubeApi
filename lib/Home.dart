@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
               icon: Icon(Icons.home)
             ),
             BottomNavigationBarItem(
-             //backgroundColor: Colors.red,
+            // backgroundColor: Colors.red,
                 title: Text("Em alta"),
                 icon: Icon(Icons.whatshot)
             ),
@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
                 icon: Icon(Icons.subscriptions)
             ),
             BottomNavigationBarItem(
-              //  backgroundColor: Colors.blue,
+             //   backgroundColor: Colors.blue,
                 title: Text("Biblioteca"),
                 icon: Icon(Icons.folder)
             ),
