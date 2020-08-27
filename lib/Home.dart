@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
           });
         } ,
         type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.red ,
+        fixedColor: Colors.red,
           items: [
             BottomNavigationBarItem(
              // backgroundColor: Colors.orange,
